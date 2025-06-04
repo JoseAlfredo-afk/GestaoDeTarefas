@@ -10,4 +10,8 @@ public class Tarefa {
         this.descricao = descricao;
         this.concluida = concluida;
     }
+
+    public String obterDados(){
+        return String.format("ID: %d | Decrição: %S | Status: %s",this.id,this.descricao,this.concluida? "Concluida":"Em aberto");
+    }
 }
